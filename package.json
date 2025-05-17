@@ -1,0 +1,26 @@
+{
+  "name": "client-straitsx",
+  "version": "1.0.0",
+  "description": "External JS/CSS setup for Webflow using Vite and CDN",
+  "scripts": {
+    "dev": "vite",
+    "build:js": "vite build",
+    "build:css": "cleancss -o dist/main.min.css src/css/main.css",
+    "build": "pnpm build:js && pnpm build:css",
+    "lint": "eslint src",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "clean-css-cli": "^5.6.3",
+    "eslint": "^8.56.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.2.5",
+    "vite": "^6.2.6"
+  },
+  "dependencies": {
+    "motion": "^12.12.1",
+    "motion-plus": "^0.1.9"
+  }
+}
